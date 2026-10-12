@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -24,7 +25,7 @@ data = {
         "Lê Hoàng Nam", "Nguyễn Văn Luật",
         "Võ Quốc Bảo", "Đặng Thu Hà",
         "Bùi Thành Công", "Hoàng Ngọc Linh",
-        "Nguyễn Thanh Phong", "Tống Nguyễn Anh Tài"
+        "Đỗ Minh Quân", "Tống Nguyễn Anh TÀi"
     ],
     "Chuyên cần": [9, 8, 7, 10, 6, 9, 8, 7, 5, 10],
     "Giữa kỳ":    [8, 7, 6, 9, 5, 8, 7, 6, 4, 9],
@@ -101,7 +102,7 @@ ten_sv = st.selectbox(
 
 sv = df[df["Họ tên"] == ten_sv].iloc[0]
 
-st.write(f"*MSSV:* {sv['MSSV']}")
+st.write(f"**MSSV:** {sv['MSSV']}")
 
 d1, d2, d3, d4, d5 = st.columns(5)
 
@@ -145,10 +146,11 @@ st.divider()
 st.markdown(
     """
     <div style="text-align:center; color:gray; font-size:12px;">
-        Người thực hiện: Tống Nguyễn Ngọc Thành<br>
+        Người thực hiện: Tống Nguyễn Ngọc Thành <br>
         MSSV: THAY_BANG_MSSV_CUA_BAN<br>
         Môn học: Trí tuệ nhân tạo và ứng dụng - UTH
     </div>
     """,
     unsafe_allow_html=True
 )
+  
