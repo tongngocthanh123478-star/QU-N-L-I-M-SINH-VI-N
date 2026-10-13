@@ -73,4 +73,4 @@ plt.xticks(rotation=45, ha="right")
 plt.grid(axis="y", linestyle="--", alpha=0.4)
 
 plt.tight_layout()
-plt.show()
+st.pyplot(plt.gcf())
